@@ -21,9 +21,9 @@
                                     <img class="card-img" src="{{$album->getMedia($album->slug)->first()->getUrl()}}" alt="Card image">
                                     <div class="card-img-overlay bg-overlay">
                                         <div class="px-1 badge bg-primary"><a  data-bs-toggle="modal" data-bs-target="#editModa{{$album->id}}"><i class="fa-solid fa-gears"></i></a></div>
-                                        <h1 class=" mt-5"><a class="card-text text-white" href="{{route('albums.show',($album->slug))}}">{{$album->title}}</a></h1>
-                                        <p class=" mt-1">Count Of Images <span class="badge badge-lg bg-primary">{{count($album->getMedia($album->slug))}}</span></p>
-                                        <p class=" mt-1">Last Update {{$album->updated_at}}</span></p>
+                                        <h1 class=" mt-5 "><a class="card-text text-white fw-bolder" href="{{route('albums.show',($album->slug))}}">{{$album->title}}</a></h1>
+                                        <p class=" mt-1 text-muted">Count Of Images <span class="badge badge-lg bg-primary">{{count($album->getMedia($album->slug))}}</span></p>
+                                        <p class=" mt-1">Last Update {{$album->updated_at->format('d-m-y')}}</span></p>
                                     </div>
                                 </div>
                             </div>

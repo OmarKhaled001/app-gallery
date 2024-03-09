@@ -39,7 +39,7 @@
                         <div class="form-group mt-1">
                             <label for="album_id">Move To:</label>
                             <select name="album_id" class="form-select mt-1" id="grade_id">
-                                <option value="" selected >chooes from list</option>
+                                <option value="" selected >Chooes from list</option>
                                 @foreach ($albums as $album)
                                 <option value="{{$album->id}}">{{$album->title}}</option>
                                 @endforeach

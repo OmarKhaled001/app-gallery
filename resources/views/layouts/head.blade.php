@@ -19,5 +19,6 @@
 <link rel="stylesheet" type="text/css" href="{{asset("app-assets/css/themes/bordered-layout.min.css")}}">
 <link rel="stylesheet" type="text/css" href="{{asset("app-assets/css/themes/semi-dark-layout.min.css")}}">
 <link rel="stylesheet" type="text/css" href="{{asset("app-assets/css/core/menu/menu-types/vertical-menu.min.css")}}">
-<link rel="stylesheet" type="text/css" href="{{asset("app-assets")}}/style.css">
+<link rel="stylesheet" type="text/css" href="{{asset("app-assets/style.css")}}">
+<link rel="stylesheet" type="text/css" href="{{asset("assets/style.css")}}">
 <link href="https://unpkg.com/filepond@^4/dist/filepond.css" rel="stylesheet" />

@@ -22,7 +22,7 @@ class AlbumController extends Controller
     public function createAlbums()
     {   
         // return forme view 
-        return view('add');
+        return view('pages.albums.add');
     }
 
     public function showAlbum($slug)
@@ -32,7 +32,7 @@ class AlbumController extends Controller
         // get album by slug
         $album = Album::where('slug',$slug)->first();
         // return view whith date
-        return view('view',compact('album','albums'));
+        return view('pages.albums.view',compact('album','albums'));
     }
 
     public function addAlbum(Request $request)

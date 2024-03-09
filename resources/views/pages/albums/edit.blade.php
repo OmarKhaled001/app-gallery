@@ -1,4 +1,4 @@
-<div class="modal fade" id="editModa{{$album->id}}" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+<div class="modal fade" id="editModal{{$album->id}}" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
     <div class="modal-dialog">
 
             {{-- Delete Model --}}
@@ -12,7 +12,7 @@
                         @csrf
                         @method('delete')
                         <h4 class="text-danger">Are you sure for delete {{$album->title}}!</h4>
-                        <p>You can move his images to another album befour delete click on move</p>
+                        <p>You can move his images to another album before delete click on move</p>
                         <input type="hidden" id="id" name="slug" value="{{$album->slug}}">
                     </div>
                     <div class="modal-footer">

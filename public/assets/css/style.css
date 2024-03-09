@@ -1,11 +1,42 @@
-/*================================================================================
-	Item Name: Vuexy - Vuejs, HTML & Laravel Admin Dashboard Template
-	Version: 2.0
-	Author: PIXINVENT
-	Author URL: http://www.themeforest.net/user/pixinvent
-================================================================================
+.pictures{
+	font-size: 0px;
+}
+.pictures .item{
+	position:relative;
+	display:inline-block;
+}
+.pictures .item img{
+	position:relative;
+	z-index: 11;
+}
+.pictures .item .item_description{
+	position:absolute;
+	z-index: 10;
+	left: -15px;
+	top: -15px;
+	right: -15px;
+	bottom: -60px;
+	
+	-webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+	-moz-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+	
+	background:#151515;
+	padding: 15px;
 
-NOTE:
-------
-PLACE HERE YOUR OWN SCSS CODES AND IF NEEDED, OVERRIDE THE STYLES FROM THE OTHER STYLESHEETS.
-WE WILL RELEASE FUTURE UPDATES SO IN ORDER TO NOT OVERWRITE YOUR STYLES IT'S BETTER LIKE THIS.  */
+	display:none;
+}
+.pictures .item .item_description span{
+	color:#ffffff;
+	font-size: 13px;
+	display:block;
+	position:absolute;
+	bottom: 15px;
+	height: 30px;			
+}
+.pictures .item:hover{
+	z-index: 100;
+}
+.pictures .tjGalleryItem .item:hover .item_description{
+	display:block;
+}
